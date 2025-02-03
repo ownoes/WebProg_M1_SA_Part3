@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izzy Monteverde's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header">
+        <img src="header-image.jpg" alt="Header Image" id="header-image"> 
+    </header>
+
+    <main class="container">
+        <!-- nav -->
+        <nav class="sidebar">
+            <h1 class="centered">Get to know me!</h1>
+            <ul>
+                <li><a href="#" id="nav-home">Home</a></li>
+                <li><a href="#" id="nav-about">About Me</a></li>
+                <li><a href="#" id="nav-projects">Recent Projects</a></li>
+                <li><a href="#" id="nav-wip">WIP's</a></li>
+            </ul>
+        </nav>
+
+        <!-- content -->
+        <section class="content" id="content-area">
+            <!-- home -->
+            <div class="slide" id="home-slide">
+                <img src="home-image.jpg" alt="Home Picture" class="home-image"> 
+                <h1>Welcome to my portfolio!</h1>
+                <p style="font-size: 15px">My name is Izzy Mari C. Monteverde ! It's nice to meet you !</p>
+            </div>
+
+            <!-- abt me -->
+            <div class="slide" id="about-slide" style="display: none;">
+                <div class="about-content">
+                    <h1>About Me!</h1>
+                    <p>Hello World! I am a second year student in Mapúa Malayan Colleges Mindanao under Computer Science.</p>
+                    <br>
+                    <h3 style="font-size: 19px;">My most recent achievements include::</h3>
+                    <br>
+                    <ul style="font-size: 13px;">
+                        <li>With Honors highschool graduate</li>
+                        <li>Microsoft Office Specialist: Excel Associate(Office 2019)</li>
+                        <li>Digital Skills: Artificial Intelligence(3 Course AI Certification provided by Future Learn)</li>
+                        <li>Digital Skills: User Experience(3 Course UX design Certification provided by Future Learn)</li>
+                    </ul>
+
+                    <!-- contact links -->
+                    <div class="social-links">
+                        <br>
+                        <a href="https://www.facebook.com/IzzyMariMonteverde/" target="_blank">
+                            <img src="facebook-icon.jpg" alt="Facebook" class="social-icon" style="max-width: 50px;">
+                        </a>
+                        <a href="https://www.instagram.com/ezeemonteverde/" target="_blank">
+                            <img src="instagram-icon.jpg" alt="Instagram" class="social-icon" style="max-width: 50px;">
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img src="linkedin-icon.jpg" alt="LinkedIn" class="social-icon" style="max-width: 50px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="about-image.jpg" alt="About Me Picture">
+                </div>
+            </div>
+
+            <!-- recent projects -->
+            <div class="slide" id="projects-slide" style="display: none;">
+                <h1>Recent Projects</h1>
+                <div class="video-carousel">
+                    <div class="video-slide active">
+                        <video src="video1.mp4" controls></video>
+                        <p>Click based energy saver game</p>
+                    </div>
+                    <div class="video-slide">
+                        <video src="video2.mp4" controls></video>
+                        <p>Order processing system</p>
+                    </div>
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+
+            <!-- work in progress -->
+            <div class="slide" id="wip-slide" style="display: none;">
+                <h1 style="margin-top: 10em;">Work in Progress</h1>
+                <p style="color: gray;">Current ongoing projects</p>
+                <div class="wip-item">
+                    <img src="wip-image1.jpg" alt="WIP Picture 1"> 
+                    <div>
+                        <h2>StudyBuddy</h2>
+                        <p>A cute and simple challenge based study program for mobile.</p>
+                    </div>
+                </div>
+                <div class="wip-item">
+                    <img src="wip-image2.jpg" alt="WIP Picture 2">
+                    <div>
+                        <h2>Messaging App</h2>
+                        <p>A simple messaging app for mobile.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
